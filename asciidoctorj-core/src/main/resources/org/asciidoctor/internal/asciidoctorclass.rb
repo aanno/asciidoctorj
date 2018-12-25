@@ -1,16 +1,24 @@
 module AsciidoctorJ
     include_package 'org.asciidoctor'
+    module Api
+        include_package 'org.asciidoctor.api'
+        module Extensions
+            include_package 'org.asciidoctor.api.extension'
+            # Treeprocessor was renamed in to TreeProcessor in https://github.com/asciidoctor/asciidoctor/commit/f1dd816ade9db457b899581841e4cf7b788aa26d
+            # This is necessary to run against both Asciidoctor 1.5.5 and 1.5.6
+            TreeProcessor = Treeprocessor unless defined? TreeProcessor
+        end
+    end
     module Extensions
         include_package 'org.asciidoctor.extension'
-        # Treeprocessor was renamed in to TreeProcessor in https://github.com/asciidoctor/asciidoctor/commit/f1dd816ade9db457b899581841e4cf7b788aa26d
-        # This is necessary to run against both Asciidoctor 1.5.5 and 1.5.6
-        TreeProcessor = Treeprocessor unless defined? TreeProcessor
     end
 end
 
 require 'java'
 require 'asciidoctor'
+# require 'asciidoctor/api'
 require 'asciidoctor/extensions'
+# require 'asciidoctor/api/extensions'
 
 module AsciidoctorModule
 
