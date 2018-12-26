@@ -1,3 +1,10 @@
+java_import java.math.BigDecimal
+java_import java.math.BigInteger
+
+defined?(::BigDecimal) or require 'bigdecimal'
+
+# include_package 'java.math'
+
 module AsciidoctorJ
     include_package 'org.asciidoctor'
     # the 'api' sub-package is new (formerly not present)
