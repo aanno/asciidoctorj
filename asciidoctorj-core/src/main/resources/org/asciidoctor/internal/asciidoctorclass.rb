@@ -1,4 +1,6 @@
 module AsciidoctorJ
+    include_package 'org.asciidoctor'
+
     java_import(
         org.asciidoctor.api.Attributes,
         org.asciidoctor.api.AttributesBuilder,
