@@ -1,5 +1,6 @@
 package org.asciidoctor
 
+import org.asciidoctor.api.OptionsBuilder
 import org.asciidoctor.api.ast.Document
 import org.asciidoctor.api.ast.Table
 import org.jboss.arquillian.spock.ArquillianSputnik

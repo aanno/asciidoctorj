@@ -1,5 +1,6 @@
 package org.asciidoctor
 
+import org.asciidoctor.api.OptionsBuilder
 import org.asciidoctor.api.ast.ContentNode
 import org.asciidoctor.api.ast.DescriptionList
 import org.asciidoctor.api.ast.DescriptionListEntry

@@ -4,6 +4,7 @@ import org.asciidoctor.Asciidoctor
 import org.asciidoctor.api.OptionsBuilder
 import org.asciidoctor.api.ast.ContentModel
 import org.asciidoctor.api.extension.BlockProcessor
+import org.asciidoctor.api.extension.Contexts
 import org.asciidoctor.internal.AsciidoctorCoreException
 import spock.lang.Specification
 
