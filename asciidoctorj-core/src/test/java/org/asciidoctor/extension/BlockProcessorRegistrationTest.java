@@ -1,8 +1,11 @@
 package org.asciidoctor.extension;
 
 import org.asciidoctor.Asciidoctor;
-import org.asciidoctor.OptionsBuilder;
-import org.asciidoctor.ast.StructuralNode;
+import org.asciidoctor.api.OptionsBuilder;
+import org.asciidoctor.api.ast.StructuralNode;
+import org.asciidoctor.api.extension.BlockProcessor;
+import org.asciidoctor.api.extension.Name;
+import org.asciidoctor.api.extension.Reader;
 import org.asciidoctor.jruby.internal.AsciidoctorCoreException;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.test.api.ArquillianResource;

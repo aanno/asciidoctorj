@@ -1,6 +1,6 @@
 package org.asciidoctor.syntaxhighlighter;
 
-import org.asciidoctor.ast.Block;
+import org.asciidoctor.api.ast.Block;
 
 import java.util.Map;
 

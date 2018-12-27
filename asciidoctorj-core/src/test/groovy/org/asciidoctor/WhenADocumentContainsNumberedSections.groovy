@@ -1,6 +1,6 @@
 package org.asciidoctor
 
-import org.asciidoctor.ast.Section
+import org.asciidoctor.api.ast.Section
 import org.jboss.arquillian.spock.ArquillianSputnik
 import org.jboss.arquillian.test.api.ArquillianResource
 import org.junit.runner.RunWith

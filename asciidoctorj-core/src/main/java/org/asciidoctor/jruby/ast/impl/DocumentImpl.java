@@ -2,8 +2,8 @@ package org.asciidoctor.jruby.ast.impl;
 
 import java.util.Map;
 
-import org.asciidoctor.ast.Document;
-import org.asciidoctor.ast.Title;
+import org.asciidoctor.api.ast.Document;
+import org.asciidoctor.api.ast.Title;
 import org.asciidoctor.jruby.internal.RubyHashUtil;
 import org.jruby.Ruby;
 import org.jruby.RubyBoolean;

@@ -1,8 +1,8 @@
 package org.asciidoctor.jruby.ast.impl;
 
-import org.asciidoctor.ast.Column;
-import org.asciidoctor.ast.Row;
-import org.asciidoctor.ast.Table;
+import org.asciidoctor.api.ast.Column;
+import org.asciidoctor.api.ast.Row;
+import org.asciidoctor.api.ast.Table;
 import org.asciidoctor.jruby.internal.RubyBlockListDecorator;
 import org.asciidoctor.jruby.internal.RubyObjectWrapper;
 import org.jruby.RubyArray;

@@ -1,8 +1,10 @@
 package org.asciidoctor.extension;
 
 import org.asciidoctor.Asciidoctor;
-import org.asciidoctor.OptionsBuilder;
-import org.asciidoctor.ast.StructuralNode;
+import org.asciidoctor.api.OptionsBuilder;
+import org.asciidoctor.api.ast.StructuralNode;
+import org.asciidoctor.api.extension.BlockMacroProcessor;
+import org.asciidoctor.api.extension.Name;
 import org.asciidoctor.jruby.internal.AsciidoctorCoreException;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.test.api.ArquillianResource;
@@ -12,7 +14,6 @@ import org.junit.runner.RunWith;
 
 import java.util.Map;
 
-import static java.util.stream.Collectors.joining;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Arquillian.class)

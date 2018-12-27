@@ -1,6 +1,6 @@
 package org.asciidoctor.jruby.ast.impl;
 
-import org.asciidoctor.ast.ContentNode;
+import org.asciidoctor.api.ast.ContentNode;
 import org.asciidoctor.jruby.internal.RubyObjectWrapper;
 import org.jruby.Ruby;
 import org.jruby.RubyArray;

@@ -1,12 +1,18 @@
 package org.asciidoctor.extension;
 
 import org.asciidoctor.Asciidoctor;
-import org.asciidoctor.Options;
-import org.asciidoctor.SafeMode;
-import org.asciidoctor.ast.ContentModel;
-import org.asciidoctor.ast.Document;
-import org.asciidoctor.ast.Section;
-import org.asciidoctor.ast.StructuralNode;
+import org.asciidoctor.api.Options;
+import org.asciidoctor.api.SafeMode;
+import org.asciidoctor.api.ast.ContentModel;
+import org.asciidoctor.api.ast.Document;
+import org.asciidoctor.api.ast.Section;
+import org.asciidoctor.api.ast.StructuralNode;
+import org.asciidoctor.api.extension.Contexts;
+import org.asciidoctor.api.extension.ExtensionGroup;
+import org.asciidoctor.api.extension.IncludeProcessor;
+import org.asciidoctor.api.extension.InlineMacroProcessor;
+import org.asciidoctor.api.extension.PreprocessorReader;
+import org.asciidoctor.api.extension.Treeprocessor;
 import org.asciidoctor.log.LogRecord;
 import org.asciidoctor.log.TestLogHandlerService;
 import org.asciidoctor.util.ClasspathResources;
@@ -41,7 +47,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.logging.LogManager;
 
-import static org.asciidoctor.OptionsBuilder.options;
+import static org.asciidoctor.api.OptionsBuilder.options;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;

@@ -1,28 +1,28 @@
 package org.asciidoctor.jruby.extension.internal;
 
-import org.asciidoctor.Options;
-import org.asciidoctor.ast.Block;
-import org.asciidoctor.ast.Cell;
-import org.asciidoctor.ast.Column;
-import org.asciidoctor.ast.ContentModel;
-import org.asciidoctor.ast.ContentNode;
-import org.asciidoctor.ast.Document;
-import org.asciidoctor.ast.ListItem;
-import org.asciidoctor.jruby.ast.impl.NodeConverter;
-import org.asciidoctor.ast.PhraseNode;
-import org.asciidoctor.ast.Row;
-import org.asciidoctor.ast.Section;
-import org.asciidoctor.ast.StructuralNode;
-import org.asciidoctor.ast.Table;
+import org.asciidoctor.api.Options;
+import org.asciidoctor.api.ast.Block;
+import org.asciidoctor.api.ast.Cell;
+import org.asciidoctor.api.ast.Column;
+import org.asciidoctor.api.ast.ContentModel;
+import org.asciidoctor.api.ast.ContentNode;
+import org.asciidoctor.api.ast.Document;
+import org.asciidoctor.api.ast.ListItem;
+import org.asciidoctor.api.ast.PhraseNode;
+import org.asciidoctor.api.ast.Row;
+import org.asciidoctor.api.ast.Section;
+import org.asciidoctor.api.ast.StructuralNode;
+import org.asciidoctor.api.ast.Table;
+import org.asciidoctor.api.extension.Processor;
+import org.asciidoctor.api.extension.Reader;
 import org.asciidoctor.jruby.ast.impl.ColumnImpl;
 import org.asciidoctor.jruby.ast.impl.ContentNodeImpl;
 import org.asciidoctor.jruby.ast.impl.DescriptionListImpl;
 import org.asciidoctor.jruby.ast.impl.DocumentImpl;
 import org.asciidoctor.jruby.ast.impl.ListImpl;
+import org.asciidoctor.jruby.ast.impl.NodeConverter;
 import org.asciidoctor.jruby.ast.impl.RowImpl;
 import org.asciidoctor.jruby.ast.impl.StructuralNodeImpl;
-import org.asciidoctor.extension.Processor;
-import org.asciidoctor.extension.Reader;
 import org.asciidoctor.jruby.internal.JRubyAsciidoctor;
 import org.asciidoctor.jruby.internal.JRubyRuntimeContext;
 import org.asciidoctor.jruby.internal.RubyHashUtil;
@@ -292,14 +292,14 @@ public class JRubyProcessor implements Processor {
     }
 
     @Override
-    public ListItem createListItem(final org.asciidoctor.ast.List parent, final String text) {
+    public ListItem createListItem(final org.asciidoctor.api.ast.List parent, final String text) {
         Ruby rubyRuntime = JRubyRuntimeContext.get(parent);
 
         return (ListItem) NodeConverter.createASTNode(rubyRuntime, NodeConverter.NodeType.LIST_ITEM_CLASS, ListImpl.class.cast(parent).getRubyObject(), rubyRuntime.newString(text));
     }
 
     @Override
-    public ListItem createListItem(final org.asciidoctor.ast.DescriptionList parent, final String text) {
+    public ListItem createListItem(final org.asciidoctor.api.ast.DescriptionList parent, final String text) {
         Ruby rubyRuntime = JRubyRuntimeContext.get(parent);
 
         return (ListItem) NodeConverter.createASTNode(rubyRuntime, NodeConverter.NodeType.LIST_ITEM_CLASS, DescriptionListImpl.class.cast(parent).getRubyObject(), rubyRuntime.newString(text));

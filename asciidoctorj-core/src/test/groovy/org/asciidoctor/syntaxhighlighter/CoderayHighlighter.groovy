@@ -1,8 +1,8 @@
 package org.asciidoctor.syntaxhighlighter
 
-import org.asciidoctor.ast.Block
-import org.asciidoctor.ast.Document
-import org.asciidoctor.extension.LocationType
+import org.asciidoctor.api.ast.Block
+import org.asciidoctor.api.ast.Document
+import org.asciidoctor.api.extension.LocationType
 import org.jruby.Ruby
 import org.jruby.javasupport.JavaEmbedUtils
 
