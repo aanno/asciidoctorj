@@ -948,7 +948,7 @@ public class WhenJavaExtensionIsRegistered {
     public void should_create_toc_with_treeprocessor() {
         asciidoctor.javaExtensionRegistry().treeprocessor(new Treeprocessor() {
             @Override
-            public org.asciidoctor.api.ast.Document process(org.asciidoctor.api.ast.Document document) {
+            public Document process(Document document) {
                 List<StructuralNode> blocks = document.getBlocks();
                 for (StructuralNode block : blocks) {
                     for (StructuralNode block2 : block.getBlocks()) {

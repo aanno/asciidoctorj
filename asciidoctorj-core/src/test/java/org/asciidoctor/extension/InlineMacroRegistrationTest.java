@@ -2,6 +2,8 @@ package org.asciidoctor.extension;
 
 import org.asciidoctor.Asciidoctor;
 import org.asciidoctor.api.OptionsBuilder;
+import org.asciidoctor.api.extension.InlineMacroProcessor;
+import org.asciidoctor.api.extension.Name;
 import org.asciidoctor.api.ast.ContentNode;
 import org.asciidoctor.api.extension.InlineMacroProcessor;
 import org.asciidoctor.api.extension.Name;

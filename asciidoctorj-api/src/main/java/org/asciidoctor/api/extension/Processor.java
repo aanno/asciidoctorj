@@ -1,16 +1,6 @@
 package org.asciidoctor.api.extension;
 
-import org.asciidoctor.api.ast.Block;
-import org.asciidoctor.api.ast.Cell;
-import org.asciidoctor.api.ast.Column;
-import org.asciidoctor.api.ast.ContentNode;
-import org.asciidoctor.api.ast.Document;
-import org.asciidoctor.api.ast.ListItem;
-import org.asciidoctor.api.ast.PhraseNode;
-import org.asciidoctor.api.ast.Row;
-import org.asciidoctor.api.ast.Section;
-import org.asciidoctor.api.ast.StructuralNode;
-import org.asciidoctor.api.ast.Table;
+import org.asciidoctor.ast.*;
 import org.asciidoctor.log.LogRecord;
 
 import java.util.List;
@@ -81,9 +71,9 @@ public interface Processor {
      */
     Document createDocument(Document parentDocument);
 
-    ListItem createListItem(final org.asciidoctor.api.ast.List parent, final String text);
+    ListItem createListItem(final org.asciidoctor.ast.List parent, final String text);
 
-    ListItem createListItem(final org.asciidoctor.api.ast.DescriptionList parent, final String text);
+    ListItem createListItem(final DescriptionList parent, final String text);
 
     /**
      * Parses the given raw asciidoctor content, parses it and appends it as children to the given parent block.

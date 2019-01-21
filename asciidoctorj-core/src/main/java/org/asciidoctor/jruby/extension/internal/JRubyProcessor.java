@@ -292,14 +292,14 @@ public class JRubyProcessor implements Processor {
     }
 
     @Override
-    public ListItem createListItem(final org.asciidoctor.api.ast.List parent, final String text) {
+    public ListItem createListItem(final org.asciidoctor.ast.List parent, final String text) {
         Ruby rubyRuntime = JRubyRuntimeContext.get(parent);
 
         return (ListItem) NodeConverter.createASTNode(rubyRuntime, NodeConverter.NodeType.LIST_ITEM_CLASS, ListImpl.class.cast(parent).getRubyObject(), rubyRuntime.newString(text));
     }
 
     @Override
-    public ListItem createListItem(final org.asciidoctor.api.ast.DescriptionList parent, final String text) {
+    public ListItem createListItem(final DescriptionList parent, final String text) {
         Ruby rubyRuntime = JRubyRuntimeContext.get(parent);
 
         return (ListItem) NodeConverter.createASTNode(rubyRuntime, NodeConverter.NodeType.LIST_ITEM_CLASS, DescriptionListImpl.class.cast(parent).getRubyObject(), rubyRuntime.newString(text));
