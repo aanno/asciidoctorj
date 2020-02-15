@@ -1,1 +1,1 @@
-org.asciidoctor.extension.JRubyProcessor
+org.asciidoctor.jruby.extension.internal.JRubyProcessor

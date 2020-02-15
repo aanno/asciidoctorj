@@ -1922,10 +1922,6 @@ The following example shows a very simplistic syntax highlighter that uses {uri-
 
 [source,java]
 ----
-import org.asciidoctor.extension.LocationType;
-import org.asciidoctor.syntaxhighlighter.SyntaxHighlighterAdapter;
-
-import java.util.Map;
 
 public class HighlightJsHighlighter implements SyntaxHighlighterAdapter { // <1>
 
@@ -2046,10 +2042,6 @@ To allow a syntax highlighter to create this construct it also has to implement 
 
 [source,java]
 ----
-import org.asciidoctor.syntaxhighlighter.Formatter;
-import org.asciidoctor.syntaxhighlighter.SyntaxHighlighterAdapter;
-
-import java.util.Map;
 
 public class HighlightJsWithLanguageHighlighter implements SyntaxHighlighterAdapter, Formatter { // <1>
 
