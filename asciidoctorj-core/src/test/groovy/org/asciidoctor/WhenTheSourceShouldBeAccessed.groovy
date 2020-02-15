@@ -3,8 +3,8 @@ package org.asciidoctor
 import org.asciidoctor.api.OptionsBuilder
 import org.asciidoctor.ast.Block
 import org.asciidoctor.ast.Cell
-import org.asciidoctor.api.ast.DescriptionList
-import org.asciidoctor.api.ast.DescriptionListEntry
+import org.asciidoctor.ast.DescriptionList
+import org.asciidoctor.ast.DescriptionListEntry
 import org.asciidoctor.ast.Document
 import org.asciidoctor.ast.List
 import org.asciidoctor.ast.ListItem

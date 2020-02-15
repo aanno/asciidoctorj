@@ -1,8 +1,8 @@
 package org.asciidoctor.jruby.syntaxhighlighter.internal;
 
-import org.asciidoctor.api.ast.Block;
-import org.asciidoctor.api.ast.Document;
 import org.asciidoctor.api.extension.LocationType;
+import org.asciidoctor.ast.Block;
+import org.asciidoctor.ast.Document;
 import org.asciidoctor.jruby.ast.impl.NodeConverter;
 import org.asciidoctor.jruby.internal.Extensions;
 import org.asciidoctor.jruby.internal.JRubyAsciidoctor;

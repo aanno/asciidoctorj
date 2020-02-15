@@ -93,7 +93,7 @@ public class PostprocessorProxy extends AbstractProcessorProxy<Postprocessor> {
     @JRubyMethod(name = "process", required = 2)
     public IRubyObject process(ThreadContext context, IRubyObject document, IRubyObject output) {
         Object o = getProcessor().process(
-                (org.asciidoctor.api.ast.Document) NodeConverter.createASTNode(document),
+                (org.asciidoctor.ast.Document) NodeConverter.createASTNode(document),
                 RubyUtils.rubyToJava(getRuntime(), output, String.class));
 
         return convertProcessorResult(o);

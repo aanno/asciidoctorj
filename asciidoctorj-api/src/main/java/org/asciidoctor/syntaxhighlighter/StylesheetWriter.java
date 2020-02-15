@@ -1,6 +1,6 @@
 package org.asciidoctor.syntaxhighlighter;
 
-import org.asciidoctor.api.ast.Document;
+import org.asciidoctor.ast.Document;
 
 import java.io.File;
 import java.util.Map;

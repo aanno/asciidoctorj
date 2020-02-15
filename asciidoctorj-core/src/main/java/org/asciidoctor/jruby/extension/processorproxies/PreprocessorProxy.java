@@ -91,7 +91,7 @@ public class PreprocessorProxy extends AbstractProcessorProxy<Preprocessor> {
     @JRubyMethod(name = "process", required = 2)
     public IRubyObject process(ThreadContext context, IRubyObject document, IRubyObject preprocessorReader) {
         getProcessor().process(
-                (org.asciidoctor.api.ast.Document) NodeConverter.createASTNode(document),
+                (org.asciidoctor.ast.Document) NodeConverter.createASTNode(document),
                 new PreprocessorReaderImpl(preprocessorReader));
 
         return getRuntime().getNil();

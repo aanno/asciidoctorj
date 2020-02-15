@@ -4,8 +4,8 @@ import org.asciidoctor.Asciidoctor
 import org.asciidoctor.api.AttributesBuilder
 import org.asciidoctor.api.OptionsBuilder
 import org.asciidoctor.api.SafeMode
-import org.asciidoctor.api.ast.Block
-import org.asciidoctor.api.ast.Document
+import org.asciidoctor.ast.Block
+import org.asciidoctor.ast.Document
 import org.asciidoctor.api.extension.LocationType
 import org.jboss.arquillian.spock.ArquillianSputnik
 import org.jboss.arquillian.test.api.ArquillianResource

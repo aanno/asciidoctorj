@@ -2,11 +2,11 @@ package org.asciidoctor;
 
 import org.asciidoctor.api.AttributesBuilder;
 import org.asciidoctor.api.SafeMode;
-import org.asciidoctor.api.ast.Cursor;
-import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.api.extension.BlockProcessor;
 import org.asciidoctor.api.extension.Name;
 import org.asciidoctor.api.extension.Reader;
+import org.asciidoctor.ast.Cursor;
+import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.log.LogHandler;
 import org.asciidoctor.log.LogRecord;
 import org.asciidoctor.log.Severity;

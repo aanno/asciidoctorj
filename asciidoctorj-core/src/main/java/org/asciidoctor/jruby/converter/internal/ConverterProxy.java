@@ -1,13 +1,9 @@
 package org.asciidoctor.jruby.converter.internal;
 
-import org.asciidoctor.api.ast.ContentNode;
 import org.asciidoctor.api.converter.Converter;
 import org.asciidoctor.api.converter.ConverterFor;
 import org.asciidoctor.api.converter.OutputFormatWriter;
-import org.asciidoctor.api.ast.ContentNode;
-import org.asciidoctor.api.converter.Converter;
-import org.asciidoctor.api.converter.ConverterFor;
-import org.asciidoctor.api.converter.OutputFormatWriter;
+import org.asciidoctor.ast.ContentNode;
 import org.asciidoctor.jruby.ast.impl.NodeConverter;
 import org.asciidoctor.jruby.internal.JRubyAsciidoctor;
 import org.asciidoctor.jruby.internal.RubyHashMapDecorator;

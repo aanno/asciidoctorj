@@ -1,9 +1,9 @@
 package org.asciidoctor.jruby.ast.impl;
 
-import org.asciidoctor.api.ast.Cell;
-import org.asciidoctor.api.ast.Column;
-import org.asciidoctor.api.ast.Document;
-import org.asciidoctor.api.ast.Table;
+import org.asciidoctor.ast.Cell;
+import org.asciidoctor.ast.Column;
+import org.asciidoctor.ast.Document;
+import org.asciidoctor.ast.Table;
 import org.jruby.runtime.builtin.IRubyObject;
 
 public class CellImpl extends ContentNodeImpl implements Cell {

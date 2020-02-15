@@ -1,8 +1,8 @@
 package org.asciidoctor.jruby.extension.processorproxies;
 
-import org.asciidoctor.api.ast.Document;
 import org.asciidoctor.api.extension.IncludeProcessor;
 import org.asciidoctor.api.extension.PreprocessorReader;
+import org.asciidoctor.ast.Document;
 import org.asciidoctor.jruby.ast.impl.NodeConverter;
 import org.asciidoctor.jruby.extension.internal.PreprocessorReaderImpl;
 import org.asciidoctor.jruby.internal.JRubyAsciidoctor;

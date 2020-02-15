@@ -1,7 +1,7 @@
 package org.asciidoctor.jruby.extension.processorproxies;
 
-import org.asciidoctor.api.ast.StructuralNode;
 import org.asciidoctor.api.extension.BlockProcessor;
+import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.jruby.ast.impl.NodeConverter;
 import org.asciidoctor.jruby.extension.internal.ReaderImpl;
 import org.asciidoctor.jruby.internal.JRubyAsciidoctor;

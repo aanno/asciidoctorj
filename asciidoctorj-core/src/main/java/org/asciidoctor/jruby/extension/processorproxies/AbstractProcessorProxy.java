@@ -1,6 +1,5 @@
 package org.asciidoctor.jruby.extension.processorproxies;
 
-import org.asciidoctor.api.ast.ContentModel;
 import org.asciidoctor.api.extension.Contexts;
 import org.asciidoctor.api.extension.DefaultAttribute;
 import org.asciidoctor.api.extension.DefaultAttributes;
@@ -9,6 +8,7 @@ import org.asciidoctor.api.extension.Location;
 import org.asciidoctor.api.extension.Name;
 import org.asciidoctor.api.extension.PositionalAttributes;
 import org.asciidoctor.api.extension.Processor;
+import org.asciidoctor.ast.ContentModel;
 import org.asciidoctor.jruby.ast.impl.ContentNodeImpl;
 import org.asciidoctor.jruby.extension.internal.JRubyProcessor;
 import org.asciidoctor.jruby.internal.Extensions;

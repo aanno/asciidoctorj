@@ -92,7 +92,7 @@ public class TreeprocessorProxy extends AbstractProcessorProxy<Treeprocessor> {
     @JRubyMethod(name = "process", required = 1)
     public IRubyObject process(ThreadContext context, IRubyObject document) {
         Object o = getProcessor().process(
-                (org.asciidoctor.api.ast.Document) NodeConverter.createASTNode(document));
+                (org.asciidoctor.ast.Document) NodeConverter.createASTNode(document));
         return convertProcessorResult(o);
     }
 }

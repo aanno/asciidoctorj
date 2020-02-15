@@ -93,7 +93,7 @@ public class DocinfoProcessorProxy extends AbstractProcessorProxy<DocinfoProcess
     public IRubyObject process(ThreadContext context, IRubyObject document) {
         return JavaEmbedUtils.javaToRuby(
                 getRuntime(),
-                getProcessor().process((org.asciidoctor.api.ast.Document) NodeConverter.createASTNode(document)));
+                getProcessor().process((org.asciidoctor.ast.Document) NodeConverter.createASTNode(document)));
     }
 
 }
