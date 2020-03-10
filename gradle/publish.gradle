@@ -110,6 +110,7 @@ if ( !project.hasProperty('skip.signing') ) {
 }
 
 // QUESTION should we move manifest creation to general Java plugin config?
+/*
 jar {
   manifest {
     attributes \
@@ -125,3 +126,4 @@ jar {
       'Implementation-Vendor': 'asciidoctor.org'
   }
 }
+ */
