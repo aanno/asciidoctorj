@@ -1,5 +1,6 @@
-apply plugin: 'com.jfrog.artifactory'
+// apply plugin: 'com.jfrog.artifactory'
 
+/*
 artifactory {
     contextUrl = 'https://oss.jfrog.org/artifactory'   //The base Artifactory URL if not overridden by the publisher/resolver
     publish {
@@ -29,3 +30,4 @@ artifactory {
 }
 
 artifactoryPublish.dependsOn build
+*/

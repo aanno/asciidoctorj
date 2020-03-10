@@ -23,7 +23,7 @@ buildscript {
 // modern plugins config
 plugins {
   id 'com.github.jruby-gradle.base' version '2.0.0'
-  id 'com.jfrog.artifactory' version '4.14.1'
+  // id 'com.jfrog.artifactory' version '4.14.1'
   id 'com.jfrog.bintray' version '1.8.4'
   id 'java'
   id 'groovy'
@@ -89,7 +89,7 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'groovy'
   apply plugin: 'maven-publish'
-  apply plugin: 'com.jfrog.artifactory'
+  // apply plugin: 'com.jfrog.artifactory'
   apply plugin: 'com.jfrog.bintray'
 
   if (!it.name.endsWith('-documentation') && !it.name.endsWith('-wildfly-integration-test')) {
